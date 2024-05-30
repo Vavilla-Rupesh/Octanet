@@ -1,0 +1,103 @@
+body{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-optical-sizing: auto;
+    overflow: scroll;
+}
+.container{
+    display: flex;
+    gap:100px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    background-image: linear-gradient(#5B42F2 0%,#00DDEB 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size:5rem;
+    padding:10px;
+    margin:10px;
+    text-align: center;
+}
+#todo-form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background: transparent;
+}
+#todo-form{
+    background-color:ghostwhite;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+    margin: 20px;
+    width:500px;
+}
+#display{
+    gap:25px;
+    border:1px solid black;
+    width:92vw;
+    padding: 20px;
+    margin:20px;
+}
+#todo-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:20px;
+    padding: 5px;
+}
+img{
+    background-color: ghostwhite;
+}
+#todo-delete,#delete{
+    background-color: ghostwhite;
+    width:auto;
+    border: none;
+}
+.task-container{
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px hsl(266, 92%, 58%);
+    outline: 1px solid hsl(266, 92%, 58%);
+    align-content: space-between;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.task-container > div {
+    width: 18%; /* Adjust this value as needed */
+    word-wrap: break-word; /* Break the word to next line if it exceeds the width */
+}
+.task-container>.todo-actions>input{
+    margin-right:150px;
+}
+.task-container>div{
+    padding: 10px;
+
+}
+#todo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#save{
+    background-color: green;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+}

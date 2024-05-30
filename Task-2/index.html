@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoApp</title>
+    <link rel="stylesheet" href="./todolist.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+     <div class="heading">ToDo List</div>
+   <div class="container">
+     <div>
+        <form id="todo-form" onsubmit="addTasks(); return false;">
+            <label for="todo-input">Title:</label>
+            <input type="text" id="todo-input" placeholder="Enter your todo">
+            <label for="todo-date">DueDate:</label>
+            <input type="date" id="todo-date">
+            <label for="todo-time">DueTime:</label>
+            <input type="time" id="todo-time">
+            <label for="todo-description">Description:</label>
+            <textarea id="todo-description" placeholder="Enter your description"></textarea>
+            <button type="submit" id="save">Add</button>
+        </form>
+    </div>
+    <div id="display">
+        <div class="heading">Tasks</div>
+    <div id="todo-list">
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
